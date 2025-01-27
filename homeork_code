@@ -100,4 +100,4 @@ Answer: JFK Airport
 
 
 Question 7:
-
+Answer: terraform init, terraform apply -auto-approve, terraform destroy
