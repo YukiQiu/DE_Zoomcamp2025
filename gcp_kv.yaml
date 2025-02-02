@@ -1,0 +1,46 @@
+id: 04_gcp_kv
+namespace: zoomcamp
+
+tasks:
+  - id: gcp_creds
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_CREDS
+    kvType: JSON
+    value: |
+      {
+          "type": "service_account",
+          "project_id": "indigo-night-447804-g7",
+          "private_key_id": "5e9b745bbb9d892aa3cf9ff573b4343a53cbf928",
+          "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC/FlRSncQYolcc\nsdAa6csiwzgwW9gRKKGMgxAB3Oq0g6yNDVsoSyxNx0if/OSi5JLuvde06VsGILo2\nGNciflOHN9RMhoO7P8v2AbgZbufFqr7ILGnuplZK1p82qfgG72A0p+YKu1LCizjc\nWGU6K2qYz3gmKz7UPQRtukdQJDRy7gl4X9hFbykz1W71zgpAh+hfCSAvHeHqVX2R\nhjc09AZDfBUNyG48hTlCO5VhN3fYB+Fsl6jwzvOs8ohIlsY3sd04THS77JqZubx/\nw3DYkWVulraz6k7M6OMKUHNrdakh39rTBricQ8d7YsvNReCgntsILhPOwJ2565Yo\nAq/o94AdAgMBAAECggEABD7UTqwwWjJb8gICvOC8kXzmj6J9JWJyj/5G2be+1vxe\n75i50ZmCXKCeSZmsuon00fORtyeas1yz4ZxOX7b25AS9Ek2U+ZD91wa4ptRnnb6a\nc85fmyMC1n5R6SNZ5JnzmGMYXnaR3+S7QmzMJCb1r+GNV16NTCaMsn0zQbTp0MzU\n3o+gpPzo/iBlZTlGvWmmvrDzRCmfmfx6fGuCtS22/u154YkP2O5ApsAhLTcHqxyo\nXZkpqeQ8fCr7tVnM++Ae1WhFClSaf8Q6Ya2BiSJoXe/ZjXVLnfkQKpCgLSQvDsIx\n+REXwyBF1ezlkQVGF+3ixFeffT6riZhaegvyZzH6wQKBgQD8IiD8upDi6c/kS9aW\nyFI/jxqKpcbE9fNFFpbxlT/mRQDjdPCp7dvmkgDtNqgtpbXujVwQVBt8RD442VDS\nuxk/tV608T+i8YuQeVNDnLGVpHWNBIqMqYmgWudjcSnFKRLiHCHj9UGEIU8eltC4\ntd3pUekT278Bj0E6sURKJTOw3QKBgQDCBIjbxK9sJSeRQO3U1u7kK3R35Ct0eaYH\nnuGbJMkCBLXK2w6kh4nhjsP3Ug5dhTj6SlzS3CLgsmvynUHCs4wfLmUPTjBOoXNW\n07nDVN4z5H/TPh8Ehh10I01mImhWi4v5jmZyj2PrUe5IEf6iavJDCB+ZBa0xrgMS\nPo6Q9LB4QQKBgQCbCLlT7bwtayvj6yYWLTM11d6yJmFktv9RGiTSg7148DEtq7hY\nJOQ0kM51Dki3WM/X0aAsgissbCH+ftIN4fISlImZpUZGAVSaD6A9UNp5c1i8z3AK\nMi1oJr1lDi5rB2iPFFFahHI2tuyZmI7bJSlA0JcLGPIIGXg4iMu+88UnGQKBgQCg\nYZ08hl84t5H4ucKgYbgCt4VEokHlu7WqsQTv+b2LxJb+hIybJ0usQBbweE1Vs44B\nIL2QtNbEBdnEKYi1yTQ4hmKV/11hcobkrIrv1FUGconT9pMvayon2hLeLe0wNZTV\nC4jWhH/lg8nEm9NxMZToImv0U8PywFTbnQi+/PZvwQKBgQDb1vUCXnbEgHX4d1Rl\n9oMy2psMXZ1Takk+a8K1IYqNkOJNoY6azI+XCxFUcMM5TMvZYfaFyyh/UfjJGF13\nAFmZXTHXEbi3QqkT3vXe7HN4WH+izU3f6xrUtyRwQ0SAoeBs4Po3sZIy1s25I++w\n/STFRzaxN3vxF4CQcu6HBMxe1g==\n-----END PRIVATE KEY-----\n",
+          "client_email": "kestra@indigo-night-447804-g7.iam.gserviceaccount.com",
+          "client_id": "108699529747655140000",
+          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+          "token_uri": "https://oauth2.googleapis.com/token",
+          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kestra%40indigo-night-447804-g7.iam.gserviceaccount.com",
+          "universe_domain": "googleapis.com"
+      }
+
+  - id: gcp_project_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    kvType: STRING
+    value: indigo-night-447804-g7 # TODO replace with your project id
+
+  - id: gcp_location
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_LOCATION
+    kvType: STRING
+    value: us
+
+  - id: gcp_bucket_name
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_BUCKET_NAME
+    kvType: STRING
+    value: kestra-de-zoomcamp-bucket-yq # TODO make sure it's globally unique!
+
+  - id: gcp_dataset
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_DATASET
+    kvType: STRING
+    value: zoomcamp
