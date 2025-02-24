@@ -1,0 +1,27 @@
+Q5:
+select a.service_type,
+       a.pickup_year,
+       a.quarters,
+       b.pickup_year as last_year,
+       b.quarters as last_year_quarter,
+       a.revenue,
+       b.revenue as last_yr_revenue,
+       (a.revenue - b.revenue)/b.revenue as growth_ratio
+from `indigo-night-447804-g7.dbt_yqiu.fct_taxi_trips_quarterly_revenue` a 
+left join `indigo-night-447804-g7.dbt_yqiu.fct_taxi_trips_quarterly_revenue`  b on a.service_type = b.service_type and a.pickup_year = b.pickup_year + 1 and a.quarters = b.quarters
+where a.pickup_year = 2020
+
+Q6:
+select distinct *
+from `indigo-night-447804-g7.dbt_yqiu.fct_taxi_trips_monthly_fare_p95`
+where pickup_year = 2020 and pickup_month = 4
+
+Q7:
+select *
+from 
+(select *,
+       dense_rank() over (partition by pickup_zone order by percen90 desc) as rn
+from indigo-night-447804-g7.dbt_yqiu.fct_fhv_monthly_zone_traveltime_p90 
+where pickup_zone in ('Newark Airport', 'SoHo', 'Yorkville East')
+and pickup_month = '2019-11-01')
+where rn = 2
