@@ -74,6 +74,15 @@ I used Metabase as the data visualization platform. I linked BigQuery with Metab
 - Adding this project in local environment using Postgres
 - Adding Stream process
 
+
+# **Documents Attached**
+
+- **Notebooks**: Including notebooks used to ingest data
+- **data**: Dataset used in this project
+- **HelpSources**: Pre-defined code to read hdf5 file
+- **Dashboard**: Dashboard PDF
+- Query to Solve the questions
+
 # **Acknowledgments**
 
 Thank you to the DataTalksClub Data Engineering Zoomcamp team for providing such a comprehensive and hands-on learning experience. I’ve learned a lot through this course.
