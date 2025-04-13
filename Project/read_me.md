@@ -39,8 +39,40 @@ The questions I'm trying to figure out using this subset are below:
 
 # **Technologies**
 
+- Batch - Spark
+- Cloud - GCP
+- Data Warehouse - Bigquery
+- Data Visualization - Metabase
 
-   
+## **Could**
 
+This project used GCP as a cloud platform. 
 
+## **Data Indestion**
 
+Since the original format of this dataset is HDF5, I first utilized the pre-defined package on MillionSongs website to read the data in Jupyter Notebook. Then, I used Spark to ingest the data to GCP.
+
+## **Data Warehouse**
+
+Since I'm using the GCP cloud, I chose BigQuery as a data warehouse. By connecting BigQuery using Spark, I created a table in BigQuery to write query to solve my questions.
+
+## **Data Visualization**
+
+I used Metabase as the data visualization platform. I linked BigQuery with Metabase to create the charts below:
+
+### **Artist Hotness Distribution**
+<img width="511" alt="Screenshot 2025-04-13 at 5 48 26 PM" src="https://github.com/user-attachments/assets/eb47f3e9-6e13-45ce-8a90-94c2250b4a6b" />
+
+### **Song Released Year Distribution**
+<img width="511" alt="Screenshot 2025-04-13 at 5 49 23 PM" src="https://github.com/user-attachments/assets/a19e3a6f-acae-4290-a050-1bca4d9807ef" />
+
+# **Future Improvements**
+
+- Adding this project in local environment using Postgres
+- Adding Stream process
+
+# **Acknowledgments**
+
+Thank you to the DataTalksClub Data Engineering Zoomcamp team for providing such a comprehensive and hands-on learning experience. I’ve learned a lot through this course.
+
+A big thanks as well to everyone who has taken the time to view or explore my project — I appreciate your interest and support!
