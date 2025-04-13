@@ -11,7 +11,7 @@ Here is the source data link:http://millionsongdataset.com/
 I randomly selected 100,000 records from the source data in the project since the source dataset was too large. 
 
 The questions I'm trying to figure out using this subset are below:
-1. What is the average duration among these 100,000 songs?
+1. What is the average duration of each artists' hottness band with duration > 60s?
 2. Which song has the longest duration, by which singer?
 3. Which year has the most songs been released?
 
