@@ -12,7 +12,7 @@ I randomly selected 100,000 records from the source data in the project since th
 
 The questions I'm trying to figure out using this subset are below:
 1. What is the average duration of each artists' hottness band with duration > 60s?
-2. Which song has the longest duration, by which singer?
+2. Which song has the longest duration, by which singer since 2000?
 3. Which year has the most songs been released?
 
 ## **Data Dictionary**
