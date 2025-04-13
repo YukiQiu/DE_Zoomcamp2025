@@ -66,6 +66,9 @@ I used Metabase as the data visualization platform. I linked BigQuery with Metab
 ### **Song Released Year Distribution**
 <img width="511" alt="Screenshot 2025-04-13 at 5 49 23 PM" src="https://github.com/user-attachments/assets/a19e3a6f-acae-4290-a050-1bca4d9807ef" />
 
+### **Average Duration of Each Artist Hotness Band:**
+<img width="500" alt="Screenshot 2025-04-13 at 6 34 23 PM" src="https://github.com/user-attachments/assets/a843a18e-2eba-46a2-96de-a96e6a268667" />
+
 # **Future Improvements**
 
 - Adding this project in local environment using Postgres
