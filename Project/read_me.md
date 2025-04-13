@@ -67,7 +67,7 @@ I used Metabase as the data visualization platform. I linked BigQuery with Metab
 <img width="511" alt="Screenshot 2025-04-13 at 5 49 23 PM" src="https://github.com/user-attachments/assets/a19e3a6f-acae-4290-a050-1bca4d9807ef" />
 
 ### **Average Duration of Each Artist Hotness Band:**
-<img width="500" alt="Screenshot 2025-04-13 at 6 34 23 PM" src="https://github.com/user-attachments/assets/a843a18e-2eba-46a2-96de-a96e6a268667" />
+<img width="499" alt="Screenshot 2025-04-13 at 6 55 55 PM" src="https://github.com/user-attachments/assets/c033d93e-22bf-468c-8b51-5c55aeea2976" />
 
 # **Future Improvements**
 
