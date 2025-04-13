@@ -1,6 +1,6 @@
 # **Problem Description**
 
-For this project, I'm using the Million Music Dataset to get some insights and show them with visualization. 
+For this project, I'm using the Million Songs Dataset to get some insights and show them with visualization. 
 
 ## **DataSet Introduction**
 
