@@ -4,7 +4,7 @@ For this project, I'm using the Million Music Dataset to get some insights and s
 
 ## **DataSet Introduction**
 
-This Million Song Dataset contains millions of songs, which includes the length of each song, release date, singer, and so on.
+This Million Song Dataset contains millions of songs, each including its length, release date, singer, and so on.
 
 Here is the source data link:http://millionsongdataset.com/
 
@@ -27,8 +27,6 @@ The questions I'm trying to figure out using this subset are below:
 
 - **duration**: duration of the track in seconds
 
-- **tempo**: tempo in BPM according to The Echo Nest
-
 - **year**: the year when this song was released, according to musicbrainz.org
 
 - **loudness**: general loudness of the track
@@ -36,6 +34,8 @@ The questions I'm trying to figure out using this subset are below:
 - **artist_hotttnesss**: artist hotttesss
 
 - **song_hotttnesss**: according to The Echo Nest, when downloaded (in December 2010), this song had a 'hotttnesss': a scale of 0 and 1
+
+- **artist_hotttnesss_band**: artist hotness band defined by artist hotness as (0,0.3,0.6,1) as bin distribution logic
 
 # **Technologies**
 
