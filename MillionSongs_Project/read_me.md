@@ -50,11 +50,15 @@ This project used GCP as a cloud platform.
 
 ## **Data Indestion**
 
-Since the original format of this dataset is HDF5, I first utilized the pre-defined package on MillionSongs website to read the data in Jupyter Notebook. Then, I used Spark to ingest the data to GCP.
+Since the original format of this dataset is HDF5, I first utilized the pre-defined package on MillionSongs website to read the data in Jupyter Notebook. Then, I used Batch method (Spark) to ingest the data to GCP.
 
 ## **Data Warehouse**
 
 Since I'm using the GCP cloud, I chose BigQuery as a data warehouse. By connecting BigQuery using Spark, I created a table in BigQuery to write query to solve my questions.
+
+# **Transformation**
+
+I did transformation on schema using Spark in this project.
 
 ## **Data Visualization**
 
